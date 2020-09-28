@@ -4,33 +4,45 @@ public class Main {
     public static int digitSwapper(int input)
     {
         // returns the number with the last 2 digits swapped
+
         int first = input/100*100;
         int second = input%10*10;
         int third = (input%100 - second/10)/10;
-        int last = first + second + third ;
+        int result = first + second + third ;
+        return result;
 
-        return last ;
 
     }
-/*
+
     public static void timeLeft(int currHour, int currMin, int depHour, int depMin)
     {
         //PRINT the time left here in hours and minutes
+        int depTotal = (depHour*60) + depMin;
+        int currTotal = (currHour*60) + currMin;
+        int difference = depTotal - currTotal;
+        int hourLeft = difference/60;
+        int minLeft = difference%60;
+
+        System.out.println("There is " + hourLeft + " hours and " + minLeft + " minutes left until the next train arrives.");
+
     }
+
     public static int dayOfWeek(int daysOfWeek1, int day)
     {
 
         // returns an integer corresponding to the day of the week
+        int sunday = day/7;
+        return sunday;
     }
 
-*/
+
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         int input = 123;
         int output = digitSwapper(input);
         System.out.println(input +" " + output);
-/*
+
         input = 6;
         output = digitSwapper(input);
         System.out.println(input +" " + output);
@@ -52,7 +64,7 @@ public class Main {
 
 
 
-*/
+
 
     }
 
