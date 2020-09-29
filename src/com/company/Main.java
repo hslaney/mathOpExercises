@@ -23,7 +23,7 @@ public class Main {
         int hourLeft = difference/60;
         int minLeft = difference%60;
 
-        System.out.println("There is " + hourLeft + " hours and " + minLeft + " minutes left until the next train arrives.");
+        System.out.println(hourLeft + " hours and " + minLeft + " minutes.");
 
     }
 
