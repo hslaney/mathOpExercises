@@ -16,8 +16,8 @@ public class MathEx {
     public static void timeLeft(int currHour, int currMin, int depHour, int depMin)
     {
         //PRINT the time left here in hours and minutes
-        int depTotal = (depHour*60) + depMin;
-        int currTotal = (currHour*60) + currMin;
+        int depTotal = depHour*60 + depMin;
+        int currTotal = currHour*60 + currMin;
         int difference = depTotal - currTotal;
         int hourLeft = difference/60;
         int minLeft = difference%60;
@@ -30,8 +30,8 @@ public class MathEx {
     {
 
         // returns an integer corresponding to the day of the week
-        int result = (day - 1 + daysOfWeek1)%7;
-        return result;
+        int result = day - 1 + daysOfWeek1;
+        return result%7;
     }
 
 
@@ -52,6 +52,7 @@ public class MathEx {
 
         timeLeft(1,34, 8, 20);
         timeLeft(1,15, 4, 36);
+
         System.out.println(dayOfWeek(0,1));
         System.out.println(dayOfWeek(0,14));
         System.out.println(dayOfWeek(6, 22));
