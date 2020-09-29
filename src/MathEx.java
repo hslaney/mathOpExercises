@@ -60,25 +60,6 @@ public class MathEx {
         System.out.println(dayOfWeek(1,24));
         System.out.println(dayOfWeek(2,1));
 
-
-
-
-
-
     }
 
 }
-/*
- *
- * 370250 370205
-6 60
-381 318
-0
-6
-6
-1
-3
-2
-6 Hours and 46 minutes.
-3 Hours and 21 minutes.
-*/
